@@ -13,108 +13,44 @@ const Step6 = () => {
     return (
         <Box mt={5}>
             <InformationBox header="Basic Information" onClick={editHandler}>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Full name:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Full name
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Email:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Email
-                </Text>
+                <Text mb={2}>Full name:</Text>
+                <Text mb={2}>Full name</Text>
+                <Text mb={2}>Email:</Text>
+                <Text mb={2}>Email</Text>
             </InformationBox>
             <InformationBox header="Personal Information" onClick={editHandler}>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Mobile Number:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Mobile Number
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Date of Birth:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Date of Birth
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Pronouns:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Pronouns
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Ethnicity:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Ethnicity
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    First Language:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    First Language
-                </Text>
+                <Text mb={2}>Mobile Number:</Text>
+                <Text mb={2}>Mobile Number</Text>
+                <Text mb={2}>Date of Birth:</Text>
+                <Text mb={2}>Date of Birth</Text>
+                <Text mb={2}>Pronouns:</Text>
+                <Text mb={2}>Pronouns</Text>
+                <Text mb={2}>Ethnicity:</Text>
+                <Text mb={2}>Ethnicity</Text>
+                <Text mb={2}>First Language:</Text>
+                <Text mb={2}>First Language</Text>
             </InformationBox>
             <InformationBox header="School Information" onClick={editHandler}>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    School:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    School
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Graduation Date:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Graduation Date
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Cluster:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Cluster
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Pathway:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Pathway
-                </Text>
+                <Text mb={2}>School:</Text>
+                <Text mb={2}>School</Text>
+                <Text mb={2}>Graduation Date:</Text>
+                <Text mb={2}>Graduation Date</Text>
+                <Text mb={2}>Cluster:</Text>
+                <Text mb={2}>Cluster</Text>
+                <Text mb={2}>Pathway:</Text>
+                <Text mb={2}>Pathway</Text>
             </InformationBox>
             <InformationBox header="Career Interest" onClick={editHandler}>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Cities:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Cities
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Open to Relocate:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Open to Relocate
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Open to Remote Work:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Open to Remote Work
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Job Types:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Job Types
-                </Text>
-                <Text mb={2} textAlign={descriptorTextAlign}>
-                    Industries:
-                </Text>
-                <Text mb={2} textAlign={valueTextAlign}>
-                    Industries
-                </Text>
+                <Text mb={2}>Cities:</Text>
+                <Text mb={2}>Cities</Text>
+                <Text mb={2}>Open to Relocate:</Text>
+                <Text mb={2}>Open to Relocate</Text>
+                <Text mb={2}>Open to Remote Work:</Text>
+                <Text mb={2}>Open to Remote Work</Text>
+                <Text mb={2}>Job Types:</Text>
+                <Text mb={2}>Job Types</Text>
+                <Text mb={2}>Industries:</Text>
+                <Text mb={2}>Industries</Text>
             </InformationBox>
         </Box>
     );
