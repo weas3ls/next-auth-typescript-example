@@ -27,11 +27,15 @@ const StudentOnboarding = () => {
     const { nextStep, prevStep, setStep, reset, activeStep } = useSteps({ initialStep: 0 });
 
     const orientation = useBreakpointValue({ base: "vertical", xl: "horizontal" });
+    console.log(orientation);
 
     return (
         <AuthLayout title="Student Registration">
-            {/* error is a false positive */}
-            <Steps checkIcon={FiCheckCircle} activeStep={activeStep} orientation={orientation}>
+            <Steps
+                checkIcon={FiCheckCircle}
+                activeStep={activeStep}
+                orientation={orientation === "vertical" ? "vertical" : "horizontal"}
+            >
                 {steps.map(({ label, description, content }) => (
                     <Step label={label} key={label} description={description}>
                         <Container maxW="container.lg" px={[0, 2, 5]}>
