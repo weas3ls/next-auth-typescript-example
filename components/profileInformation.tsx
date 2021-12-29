@@ -6,9 +6,13 @@ import InformationBox from "./UI/InformationBox";
 const ProfileInformation = () => {
     // const { getEditButtonProps } = useEditableControls();
 
+    const editHandler = () => {
+        console.log("ello");
+    };
+
     return (
         <Container maxW="100%">
-            <InformationBox header="Overview">
+            <InformationBox header="Overview" onClick={editHandler}>
                 <Box w={{ base: "50%", md: "30%", lg: "20%" }} textAlign="right">
                     <Text mb={2}>Full Name:</Text>
                     <Text mb={2}>Email:</Text>
@@ -28,7 +32,7 @@ const ProfileInformation = () => {
                     <Text mb={2}>First Language</Text>
                 </Box>
             </InformationBox>
-            <InformationBox header="Education">
+            <InformationBox header="Education" onClick={editHandler}>
                 <Box w={{ base: "50%", md: "30%", lg: "20%" }} textAlign="right">
                     <Text mb={2}>School:</Text>
                     <Text mb={2}>Graduation Date:</Text>
@@ -42,7 +46,7 @@ const ProfileInformation = () => {
                     <Text mb={2}>Pathway</Text>
                 </Box>
             </InformationBox>
-            <InformationBox header="Career Interest">
+            <InformationBox header="Career Interest" onClick={editHandler}>
                 <Box w={{ base: "50%", md: "30%", lg: "20%" }} textAlign="right">
                     <Text mb={2}>Cities:</Text>
                     <Text mb={2}>Open to Relocate:</Text>
