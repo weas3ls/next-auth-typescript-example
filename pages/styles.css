@@ -1,30 +1,18 @@
-body {
-  font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  padding: 0 1rem 1rem 1rem;
-  max-width: 680px;
-  margin: 0 auto;
-  background: #fff;
-  color: #333;
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
-li,
-p {
-  line-height: 1.5rem;
+.chakra-accordion__panel::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
-a {
-  font-weight: 500;
-}
+/* Hide scrollbar for IE, Edge and Firefox */
 
-hr {
-  border: 1px solid #ddd;
-}
-
-iframe {
-  background: #ccc;
-  border: 1px solid #ccc;
-  height: 10rem;
-  width: 100%;
-  border-radius: .5rem;
-  filter: invert(1);
+.chakra-accordion__panel {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }

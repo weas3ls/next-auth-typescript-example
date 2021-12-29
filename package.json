@@ -1,41 +1,56 @@
 {
-  "name": "next-auth-typescript-example",
-  "version": "0.0.0",
-  "private": true,
-  "description": "An example project for NextAuth.js using Typescript",
-  "repository": "https://github.com/nextauthjs/next-auth-typescript-example.git",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "http://next-auth-typescript-example.now.sh",
-  "main": "",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "types": "tsc --noEmit"
-  },
-  "author": "Lluis Agusti <lluis@hey.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Iain Collins <me@iaincollins.com>",
-    "Nico Domino <yo@ndo.dev>"
-  ],
-  "license": "ISC",
-  "prettier": {
-    "semi": false
-  },
-  "dependencies": {
-    "next": "^11.0.0",
-    "next-auth": "^4.0.1",
-    "nodemailer": "^6.6.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^15.12.4",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "typescript": "^4.3.4"
-  }
+    "name": "next-auth-typescript-example",
+    "version": "0.0.0",
+    "private": true,
+    "description": "An example project for NextAuth.js using Typescript",
+    "repository": "https://github.com/nextauthjs/next-auth-typescript-example.git",
+    "bugs": {
+        "url": "https://github.com/nextauthjs/next-auth/issues"
+    },
+    "homepage": "http://next-auth-typescript-example.now.sh",
+    "main": "",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "types": "tsc --noEmit",
+        "format": "prettier --ignore-path .gitignore --write ."
+    },
+    "author": "Lluis Agusti <lluis@hey.com>",
+    "contributors": [
+        "Balázs Orbán <info@balazsorban.com>",
+        "Iain Collins <me@iaincollins.com>",
+        "Nico Domino <yo@ndo.dev>"
+    ],
+    "license": "ISC",
+    "prettier": {
+        "semi": true,
+        "arrowParens": "avoid",
+        "tabWidth": 4,
+        "printWidth": 120
+    },
+    "dependencies": {
+        "@chakra-ui/icons": "^1.1.1",
+        "@chakra-ui/react": "^1.7.3",
+        "@emotion/react": "^11.7.1",
+        "@emotion/styled": "^11.6.0",
+        "chakra-ui-steps": "^1.5.0",
+        "formik": "^2.2.9",
+        "framer-motion": "^4.1.17",
+        "next": "^11.0.0",
+        "next-auth": "^4.0.1",
+        "nodemailer": "^6.6.3",
+        "prettier": "^2.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.3.1",
+        "react-select": "^5.2.1"
+    },
+    "devDependencies": {
+        "@types/node": "^15.12.4",
+        "@types/react": "^17.0.11",
+        "@types/react-datepicker": "^4.3.2",
+        "@types/react-dom": "^17.0.8",
+        "typescript": "^4.3.4"
+    }
 }

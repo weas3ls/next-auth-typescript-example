@@ -32,7 +32,7 @@ NextAuth.js is an easy to implement, full-stack (client/server) open source auth
 
 Go to [next-auth.js.org](https://next-auth.js.org) for more information and documentation.
 
-> *NextAuth.js is not associated with Vercel or Next.js.*
+> _NextAuth.js is not associated with Vercel or Next.js._
 
 ## Getting Started
 
@@ -62,20 +62,20 @@ You **can** skip configuring a database and come back to it later if you want.
 
 For more information about setting up a database, please check out the following links:
 
-* Docs: [next-auth.js.org/adapters/overview](https://next-auth.js.org/adapters/overview)
-* Adapters Repo: [nextauthjs/adapters](https://github.com/nextauthjs/adapters)
+-   Docs: [next-auth.js.org/adapters/overview](https://next-auth.js.org/adapters/overview)
+-   Adapters Repo: [nextauthjs/adapters](https://github.com/nextauthjs/adapters)
 
 ### 3. Configure Authentication Providers
 
-- Review and update options in `pages/api/auth/[...nextauth].js` as needed.
+-   Review and update options in `pages/api/auth/[...nextauth].js` as needed.
 
-- When setting up OAuth, in the developer admin page for each of your OAuth services, you should configure the callback URL to use a callback path of `{server}/api/auth/callback/{provider}`.
+-   When setting up OAuth, in the developer admin page for each of your OAuth services, you should configure the callback URL to use a callback path of `{server}/api/auth/callback/{provider}`.
 
-  e.g. For Google OAuth you would use: `http://localhost:3000/api/auth/callback/google`
+    e.g. For Google OAuth you would use: `http://localhost:3000/api/auth/callback/google`
 
-  A list of configured providers and their callback URLs is available from the endpoint `/api/auth/providers`. You can find more information at https://next-auth.js.org/configuration/providers
+    A list of configured providers and their callback URLs is available from the endpoint `/api/auth/providers`. You can find more information at https://next-auth.js.org/configuration/providers
 
-- You can also choose to specify an **SMTP server** for passwordless sign in via email.
+-   You can also choose to specify an **SMTP server** for passwordless sign in via email.
 
 ### 4. Start the application
 
@@ -96,7 +96,7 @@ npm start
 
 You must set the `NEXTAUTH_URL` environment variable with the URL of your site, before deploying to production.
 
-e.g.  in your `.env.local` file - `NEXTAUTH_URL=https://example.com`
+e.g. in your `.env.local` file - `NEXTAUTH_URL=https://example.com`
 
 To do this with Vercel, you can use the [Vercel project dashboard](https://vercel.com/dashboard) or their cli with the `vc env` command:
 

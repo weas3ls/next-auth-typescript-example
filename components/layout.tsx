@@ -1,16 +1,16 @@
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./header";
+import Footer from "./footer";
 
 interface LayoutProps {
-  children: React.ReactNode
+    children: React.ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
-  return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+        </>
+    );
 }
