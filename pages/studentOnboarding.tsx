@@ -30,45 +30,47 @@ const StudentOnboarding = () => {
     const orientation = useBreakpointValue({ base: "vertical", xl: "horizontal" });
 
     return (
-        <AuthLayout title="Student Registration">
-            <Steps
-                checkIcon={FiCheckCircle}
-                activeStep={activeStep}
-                orientation={orientation === "vertical" ? "vertical" : "horizontal"}
-            >
-                {steps.map(({ label, description, content }) => (
-                    <Step label={label} key={label} description={description}>
-                        <Container maxW="container.lg" px={[0, 2, 5]}>
-                            {content}
-                        </Container>
-                    </Step>
-                ))}
-            </Steps>
-            {activeStep === 6 ? (
-                <>
-                    <Submit />
-                    <Center>
-                        <Button my={6} size="sm" onClick={reset}>
-                            Reset
+        <>
+            <AuthLayout title="Student Registration">
+                <Steps
+                    checkIcon={FiCheckCircle}
+                    activeStep={activeStep}
+                    orientation={orientation === "vertical" ? "vertical" : "horizontal"}
+                >
+                    {steps.map(({ label, description, content }) => (
+                        <Step label={label} key={label} description={description}>
+                            <Container maxW="container.lg" px={[0, 2, 5]}>
+                                {content}
+                            </Container>
+                        </Step>
+                    ))}
+                </Steps>
+                {activeStep === 6 ? (
+                    <>
+                        <Submit />
+                        <Center>
+                            <Button my={6} size="sm" onClick={reset}>
+                                Reset
+                            </Button>
+                        </Center>
+                    </>
+                ) : (
+                    <Flex width="100%" justify="flex-end">
+                        <Button mr="auto" size="sm" variant="ghost" onClick={prevStep} isDisabled={activeStep === 0}>
+                            Prev
                         </Button>
-                    </Center>
-                </>
-            ) : (
-                <Flex width="100%" justify="flex-end">
-                    <Button mr="auto" size="sm" variant="ghost" onClick={prevStep} isDisabled={activeStep === 0}>
-                        Prev
-                    </Button>
-                    <Button size="sm" onClick={nextStep}>
-                        {activeStep === steps.length - 1 ? "Submit" : "Next"}
-                    </Button>
-                </Flex>
-            )}
+                        <Button size="sm" onClick={nextStep}>
+                            {activeStep === steps.length - 1 ? "Submit" : "Next"}
+                        </Button>
+                    </Flex>
+                )}
+            </AuthLayout>
             <Center mt={5}>
                 <NextLink href="/login" passHref replace>
                     <Link>Go to login</Link>
                 </NextLink>
             </Center>
-        </AuthLayout>
+        </>
     );
 };
 
