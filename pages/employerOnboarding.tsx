@@ -8,18 +8,23 @@ import {
     Checkbox,
     Button,
     Center,
+    Select,
+    useDisclosure,
+    Link,
 } from "@chakra-ui/react";
 import { Formik, Form } from "formik";
 import React from "react";
 import AuthLayout from "../components/layouts/AuthLayout";
 import cities from "../components/StudentOnboarding/Dependencies/Cities";
 import EmailInput from "../components/UI/Inputs/EmailInput";
-import MultiSelect from "../components/UI/Inputs/MultiSelect";
+import Modal from "../components/UI/Modal";
 
 const EmployerOnboarding = () => {
     const employerRegistrationHandler = (values: any) => {
         console.log(values);
     };
+
+    const { onOpen } = useDisclosure();
 
     return (
         <AuthLayout title="Employer Registration">
@@ -46,14 +51,28 @@ const EmployerOnboarding = () => {
                             </InputGroup>
                         </FormControl>
                         <FormControl isRequired>
-                            <MultiSelect name="cities" options={cities} label="Cities" />
+                            <FormLabel htmlFor="city">City</FormLabel>
+                            <Select>
+                                {cities.map((city: { value: string; label: string }) => (
+                                    <option value={city.value} key={city.value}>
+                                        {city.label}
+                                    </option>
+                                ))}
+                            </Select>
                         </FormControl>
                         <FormControl isRequired>
-                            <MultiSelect name="states" options={cities} label="States" />
+                            <FormLabel htmlFor="state">State</FormLabel>
+                            <Select>
+                                {cities.map((city: { value: string; label: string }) => (
+                                    <option value={city.value} key={city.value}>
+                                        {city.label}
+                                    </option>
+                                ))}
+                            </Select>
                         </FormControl>
                     </SimpleGrid>
                     <Checkbox colorScheme="green" isRequired>
-                        I have read and agree to the Terms of Service and Privacy Policy
+                        I have read and agree to the <Modal header="Terms of Service" />
                     </Checkbox>
                     <Center w="100%">
                         <Button colorScheme="green" mt={5} type="submit">

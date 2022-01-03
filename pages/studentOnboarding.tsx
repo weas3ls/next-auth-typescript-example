@@ -1,6 +1,7 @@
 import { Button, Center, Container, Flex, Link, useBreakpointValue } from "@chakra-ui/react";
 import { Step, Steps, useSteps } from "chakra-ui-steps";
 import { FiCheckCircle } from "react-icons/fi";
+import NextLink from "next/link";
 
 import React from "react";
 import AuthLayout from "../components/layouts/AuthLayout";
@@ -27,7 +28,6 @@ const StudentOnboarding = () => {
     const { nextStep, prevStep, setStep, reset, activeStep } = useSteps({ initialStep: 0 });
 
     const orientation = useBreakpointValue({ base: "vertical", xl: "horizontal" });
-    console.log(orientation);
 
     return (
         <AuthLayout title="Student Registration">
@@ -48,7 +48,7 @@ const StudentOnboarding = () => {
                 <>
                     <Submit />
                     <Center>
-                        <Button mt={6} size="sm" onClick={reset}>
+                        <Button my={6} size="sm" onClick={reset}>
                             Reset
                         </Button>
                     </Center>
@@ -63,6 +63,11 @@ const StudentOnboarding = () => {
                     </Button>
                 </Flex>
             )}
+            <Center mt={5}>
+                <NextLink href="/login" passHref replace>
+                    <Link>Go to login</Link>
+                </NextLink>
+            </Center>
         </AuthLayout>
     );
 };
