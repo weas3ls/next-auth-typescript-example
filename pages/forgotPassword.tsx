@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     return (
         <>
             <AuthLayout title="Reset Password">
-                {!formSubmitted && (
+                {!formSubmitted ? (
                     <Box>
                         <Text mb={5}>
                             Forgot your password? No worries! Please provide your email and we'll get things taken care
@@ -34,8 +34,7 @@ const ForgotPassword = () => {
                             </Form>
                         </Formik>
                     </Box>
-                )}
-                {formSubmitted && (
+                ) : (
                     <Box>
                         <Text>
                             A reset email has been sent to <strong>{email}</strong>
