@@ -31,7 +31,7 @@ const StudentOnboarding = () => {
 
     return (
         <>
-            <AuthLayout title="Student Registration">
+            <AuthLayout title="Student Registration" size="">
                 <Steps
                     checkIcon={FiCheckCircle}
                     activeStep={activeStep}

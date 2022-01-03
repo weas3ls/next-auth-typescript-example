@@ -16,7 +16,7 @@ const ForgotPassword = () => {
 
     return (
         <>
-            <AuthLayout title="Reset Password">
+            <AuthLayout title="Reset Password" size={{ base: "90%", xl: "50%" }}>
                 {!formSubmitted ? (
                     <Box>
                         <Text mb={5}>

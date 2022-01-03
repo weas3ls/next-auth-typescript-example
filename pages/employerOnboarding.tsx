@@ -32,7 +32,7 @@ const EmployerOnboarding = () => {
 
     return (
         <>
-            <AuthLayout title={formSubmitted ? "Information Submitted" : "Employer Registration"}>
+            <AuthLayout title={formSubmitted ? "Information Submitted" : "Employer Registration"} size="">
                 {!formSubmitted ? (
                     <Formik
                         initialValues={{ firstName: "", lastName: "", email: "" }}

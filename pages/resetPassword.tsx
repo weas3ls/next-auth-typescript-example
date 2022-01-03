@@ -11,7 +11,7 @@ const ResetPassword = () => {
     };
 
     return (
-        <AuthLayout title="Complete Password Reset">
+        <AuthLayout title="Complete Password Reset" size={{ base: "90%", xl: "50%" }}>
             <Text mb={5}>Please set your new password below! You will be automatically logged in afterwards</Text>
             <Formik
                 initialValues={{ password: "", confirmPassword: "" }}

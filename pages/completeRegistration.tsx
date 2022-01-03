@@ -17,7 +17,7 @@ const CompleteRegistration = (props: any) => {
     };
 
     return (
-        <AuthLayout title="Complete Registration">
+        <AuthLayout title="Complete Registration" size={{ base: "90%", xl: "50%" }}>
             <Box>
                 <Text mb={5}>Thank you for verifying your email address! Please set your password now</Text>
                 <Formik initialValues={{ password: "" }} onSubmit={values => setPasswordHandler(values)}>

@@ -6,7 +6,7 @@ import AuthLayout from "../components/layouts/AuthLayout";
 
 const SelectAccountType = () => {
     return (
-        <AuthLayout title="First, tell us who you are">
+        <AuthLayout title="First, tell us who you are" size={{ base: "90%", xl: "50%" }}>
             <Wrap w="100%" spacing={{ base: "5rem", md: "10rem", xl: "15rem" }} justify="center">
                 <Center flexDirection="column" textAlign="center">
                     <NextLink href="/studentOnboarding" passHref>

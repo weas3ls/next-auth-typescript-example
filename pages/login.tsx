@@ -23,7 +23,7 @@ const Login = () => {
 
     return (
         <>
-            <AuthLayout title="Welcome back!">
+            <AuthLayout title="Welcome back!" size={{ base: "90%", xl: "50%" }}>
                 <Formik initialValues={{ email: "", password: "" }} onSubmit={values => loginHandler(values)}>
                     <Form>
                         <label htmlFor="email">Email</label>
