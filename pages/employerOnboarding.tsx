@@ -21,6 +21,7 @@ import AuthLayout from "../components/layouts/AuthLayout";
 import cities from "../components/StudentOnboarding/Dependencies/Cities";
 import EmailInput from "../components/UI/Inputs/EmailInput";
 import Modal from "../components/UI/Modal";
+import LegalAccordion from "../components/LegalAccordion";
 
 const EmployerOnboarding = () => {
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -77,7 +78,10 @@ const EmployerOnboarding = () => {
                                 </FormControl>
                             </SimpleGrid>
                             <Checkbox colorScheme="green" isRequired>
-                                I have read and agree to the <Modal header="Terms of Service" />
+                                I have read and agree to the{" "}
+                                <Modal header="Terms of Service" buttonText="Terms of Service and Privacy Policy">
+                                    <LegalAccordion />
+                                </Modal>
                             </Checkbox>
                             <Center w="100%">
                                 <Button colorScheme="green" mt={5} type="submit">

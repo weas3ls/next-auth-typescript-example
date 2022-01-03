@@ -3,7 +3,7 @@ import React from "react";
 import PrivacyPolicy from "./StudentOnboarding/Dependencies/PrivacyPolicy";
 import TermsOfService from "./StudentOnboarding/Dependencies/TermsOfService";
 
-const ToSandPP = () => {
+const LegalAccordion = () => {
     return (
         <Accordion mt={5} w="100%" allowToggle>
             <AccordionItem>
@@ -36,4 +36,4 @@ const ToSandPP = () => {
     );
 };
 
-export default ToSandPP;
+export default LegalAccordion;
